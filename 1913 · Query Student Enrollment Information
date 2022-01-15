@@ -1,0 +1,4 @@
+ SELECT  student_name, phone, hometown, address
+   FROM students
+   LEFT JOIN enrollments
+   ON students.id = enrollments.student_id
