@@ -1,0 +1,5 @@
+select group_members.name
+from group_members
+join group_members as group_h
+on group_members.group_leader_id = group_h.id
+where group_members.score> group_h.score
