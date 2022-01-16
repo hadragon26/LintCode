@@ -1,0 +1,4 @@
+select score
+from player_scores
+group by score
+having count(score)>=3
