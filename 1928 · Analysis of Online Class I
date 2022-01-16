@@ -1,0 +1,4 @@
+select student_id, min(date) as earliest_course_date
+from online_class_situations
+where course_number > 0 
+group by student_id
