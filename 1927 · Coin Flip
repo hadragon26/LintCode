@@ -1,0 +1,3 @@
+update coins 
+set side = case when side ="p" then "n"
+                else "p" end
