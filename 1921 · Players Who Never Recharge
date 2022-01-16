@@ -1,0 +1,3 @@
+select users.name as player
+from users
+where users.id not in (select user_id from recharges)
