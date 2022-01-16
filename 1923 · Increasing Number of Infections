@@ -1,0 +1,4 @@
+select new_cases.id
+from new_cases
+join new_cases p 
+where datediff(new_cases.date,p.date) = 1 and new_cases.increased_count > p.increased_count
