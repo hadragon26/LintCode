@@ -1,0 +1,5 @@
+select rooms.id,rent,name
+from rooms
+left join tenants
+on tenant_id = tenants.id
+order by rooms.id
