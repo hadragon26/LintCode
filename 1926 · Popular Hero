@@ -1,0 +1,4 @@
+select id,name, popularity, concat(ban ,"%") probability
+from heroes
+where popularity != "T3" and id %2 = 1
+order by ban desc
