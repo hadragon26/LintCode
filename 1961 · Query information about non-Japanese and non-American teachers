@@ -1,0 +1,2 @@
+select * from teachers 
+where country not in("JP","USA")
