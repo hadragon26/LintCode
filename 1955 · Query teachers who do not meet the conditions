@@ -1,0 +1,6 @@
+select *
+from teachers 
+where id not in (
+select id
+from teachers 
+where country ="CN" and age >20)
