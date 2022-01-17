@@ -1,0 +1,2 @@
+select * from  teachers
+where (age>=20 and age<=25) and country not in ("CN","UK")
