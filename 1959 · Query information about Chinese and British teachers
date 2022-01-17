@@ -1,0 +1,6 @@
+select *
+from teachers 
+where id in (
+    select id from teachers
+    where country = "CN" or country ="UK"
+)
