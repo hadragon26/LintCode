@@ -1,0 +1,2 @@
+select name from courses
+where teacher_id not in(1,3)
