@@ -1,0 +1,4 @@
+select bike_id,user_id
+from shared_bicycles
+group by bike_id,user_id
+having count(user_id)>=3
