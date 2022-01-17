@@ -1,0 +1,2 @@
+select * from teachers 
+where name = "Eastern Heretic" and age >18
