@@ -1,0 +1,4 @@
+select categories.name, rankings.year,rankings.score
+from rankings
+join categories
+where rankings.category_id = categories.id
