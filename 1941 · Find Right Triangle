@@ -1,0 +1,2 @@
+select *,if (power(a,2)+power(b,2) = power(c,2) or power(c,2)+power(b,2) = power(a,2) or power(a,2)+power(c,2) = power(b,2),"Yes","No" ) right_triangle
+from line_segments
