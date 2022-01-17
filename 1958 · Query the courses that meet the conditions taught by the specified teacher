@@ -1,0 +1,2 @@
+select * from courses 
+where teacher_id =4 and student_count > 500
