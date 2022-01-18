@@ -1,0 +1,3 @@
+select * 
+from courses 
+where student_count >= 50 and student_count<=55 
