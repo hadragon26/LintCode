@@ -1,0 +1,2 @@
+select * from teachers
+where country = "CN" and (id<5 or id > 10)
