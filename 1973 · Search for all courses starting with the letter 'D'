@@ -1,0 +1,2 @@
+select * from courses 
+where name regexp '^D'
