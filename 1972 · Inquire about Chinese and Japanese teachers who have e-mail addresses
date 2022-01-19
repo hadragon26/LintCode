@@ -1,0 +1,2 @@
+select * from teachers 
+where (country = 'CN' or country = 'JP') and (email is not null)
