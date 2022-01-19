@@ -1,0 +1,2 @@
+select * from teachers 
+where email like '%@qq.com' and country = "CN"
