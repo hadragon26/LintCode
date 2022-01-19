@@ -1,0 +1,2 @@
+select * from courses
+order by student_count asc
