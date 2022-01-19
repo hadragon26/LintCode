@@ -1,0 +1,2 @@
+select * from courses 
+where year(created_at)=2020
