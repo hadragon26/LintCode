@@ -1,0 +1,3 @@
+select * from courses
+order by student_count 
+limit 3
