@@ -1,0 +1,3 @@
+select name 
+from courses
+where name regexp '^D[b-y]'
