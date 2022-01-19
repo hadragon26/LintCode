@@ -1,0 +1,2 @@
+select name,email from teachers
+where email like '%@qq.com'
