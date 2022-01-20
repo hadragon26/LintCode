@@ -1,0 +1,2 @@
+select name , created_at , date(created_at) created_date, time(created_at) created_time
+from courses
