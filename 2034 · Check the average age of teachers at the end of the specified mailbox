@@ -1,0 +1,3 @@
+select avg(age) average_teacher_age
+from teachers 
+where email like "%@qq.com"
