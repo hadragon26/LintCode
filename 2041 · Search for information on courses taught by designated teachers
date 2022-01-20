@@ -1,0 +1,4 @@
+select name,teacher_id,created_at
+from courses
+where teacher_id <=3
+order by teacher_id asc , created_at desc
