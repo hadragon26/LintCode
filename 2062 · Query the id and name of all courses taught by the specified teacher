@@ -1,0 +1,6 @@
+select c.id , c.name course_name,t.name teacher_name
+from courses c
+inner join 
+teachers t 
+on c.teacher_id = t.id 
+where t.name = "Eastern Heretic"
