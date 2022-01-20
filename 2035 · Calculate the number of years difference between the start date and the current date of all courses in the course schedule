@@ -1,0 +1,3 @@
+
+select name courses_name,created_at courses_created_at, datediff('2021-04-01',created_at) div 365 as year_diff
+from courses
