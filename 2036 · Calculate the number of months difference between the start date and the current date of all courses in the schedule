@@ -1,0 +1,2 @@
+select timestampdiff(month,created_at,'2020-04-22') MonthDiff
+from courses
