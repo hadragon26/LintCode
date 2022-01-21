@@ -1,0 +1,6 @@
+select c.id,c.student_count
+from courses c 
+left join 
+teachers t
+on c.teacher_id = t.id 
+where t.country not in ("USA","UK")
