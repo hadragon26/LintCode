@@ -1,0 +1,1 @@
+alter table courses add foreign key (teacher_id) references teachers(id)
