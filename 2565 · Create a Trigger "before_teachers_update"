@@ -1,0 +1,3 @@
+create trigger before_teachers_update 
+before update on teachers for each row
+set new.country = "CN"
