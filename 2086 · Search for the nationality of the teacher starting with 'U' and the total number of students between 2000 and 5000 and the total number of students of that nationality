@@ -1,0 +1,11 @@
+select t.country,sum(c.student_count) student_count 
+from 
+teachers t
+left join 
+courses c
+on t.id = c.teacher_id
+
+where t.country like "U%"
+group by country
+having student_count between 2000 and 5000
+order by sum(c.student_count) , t.country
