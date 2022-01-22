@@ -1,0 +1,8 @@
+BEGIN;
+
+
+
+INSERT into teachers (name,age,country) Values("Kansas",41,"UK");
+
+
+COMMIT;
