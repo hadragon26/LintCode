@@ -1,0 +1,10 @@
+select online_class_situations.student_id,online_class_situations.device_id from
+online_class_situations inner join 
+(select student_id,min(date) date from(
+select * 
+from 
+online_class_situations
+where course_number > 0) t 
+group by student_id) c
+where c.student_id = online_class_situations.student_id
+and c.date = online_class_situations.date
