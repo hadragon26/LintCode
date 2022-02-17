@@ -1,0 +1,11 @@
+select s.name 
+from students s 
+where s.id not in (
+    select r.student_id
+    from recording r 
+    where r.company_id =(
+        select c.id
+        from companies c
+        where c.name='Alibaba'
+    )
+)
