@@ -1,0 +1,16 @@
+select c. name , c.address
+from companies c 
+
+where c.id in(
+
+
+select r.company_id 
+from records r 
+group by r.company_id
+having count(*) = (
+
+select count(*)
+from records r 
+group by r.company_id
+order by count(*) desc
+limit 1 ) )
