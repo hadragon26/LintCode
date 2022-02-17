@@ -1,0 +1,5 @@
+select s.name 
+from students s inner join classes c inner join teachers t
+where s.class_id =c.id 
+and c.teacher_id = t.id 
+and t.name = 'xujia'
