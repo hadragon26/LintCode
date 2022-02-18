@@ -1,0 +1,7 @@
+select name,truncate(avg(score),2) average_score
+from(
+select c.name,r.score 
+from categories c inner join
+rankings r 
+where r.category_id = c.id)t
+group by name
