@@ -1,0 +1,4 @@
+select max(height) height from (select height
+from student_heights
+group by height 
+having count(*) = 1)t
