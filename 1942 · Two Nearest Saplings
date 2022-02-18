@@ -1,0 +1,10 @@
+select min(b.distance - a.distance) shortest_distance from 
+(select *
+from sapling_distances 
+order by distance) a
+inner join
+(select *
+from sapling_distances 
+order by distance) b 
+where b.distance > a.distance
+having shortest_distance is not null
