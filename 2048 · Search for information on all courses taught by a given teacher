@@ -1,0 +1,4 @@
+select c.id,c.name,c.student_count,c.created_at,c.teacher_id
+from courses c inner join teachers t 
+where t.id = c.teacher_id
+and t.name = 'Western Venom'
