@@ -1,0 +1,8 @@
+select * from courses 
+where student_count >(
+    select min(student_count)
+    from courses c 
+    where c.teacher_id in (select id from
+    teachers where name = 'Eastern Heretic')
+)
+and teacher_id not in (select id from teachers where name = 'Eastern Heretic')
