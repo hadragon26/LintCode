@@ -1,0 +1,4 @@
+select c.name
+from courses c inner join teachers t 
+where t.country = 'USA'
+and t.id = c.teacher_id
