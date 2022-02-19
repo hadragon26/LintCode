@@ -1,0 +1,5 @@
+update courses
+set name = 'Java'
+where teacher_id in (select t.id
+from teachers t 
+where t.name =  'Western Venom')
