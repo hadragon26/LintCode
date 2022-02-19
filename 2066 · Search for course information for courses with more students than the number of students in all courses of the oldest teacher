@@ -1,0 +1,9 @@
+select * 
+from courses c where 
+c.student_count >
+(
+select max(c.student_count)
+from courses c 
+where teacher_id in (select id from teachers 
+where age in (select max(age)
+from teachers) ))
