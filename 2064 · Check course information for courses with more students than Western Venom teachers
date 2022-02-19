@@ -1,0 +1,5 @@
+select * from courses
+where student_count>(
+    select if(count(*)>0,max(student_count),0) from courses
+    where teacher_id=(select id from teachers where name='Western Venom')
+    )
