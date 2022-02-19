@@ -1,0 +1,4 @@
+select t.name 
+from teachers t 
+where t.id in (select c.teacher_id
+from courses c where c.name = 'Big Data')
