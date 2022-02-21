@@ -1,0 +1,10 @@
+select t.name,t.student_count
+from courses t 
+where (t.student_count,t.teacher_id) in(
+
+
+select max(s.student_count),s.teacher_id
+from courses s
+
+
+group by teacher_id)
