@@ -1,0 +1,6 @@
+select t.name
+from teachers t,courses c 
+where c.teacher_id = t.id
+group by t.name
+having avg(c.student_count) > (select avg(student_count)
+from courses)
