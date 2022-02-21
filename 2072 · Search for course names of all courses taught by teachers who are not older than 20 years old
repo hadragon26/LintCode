@@ -1,0 +1,6 @@
+select c.name
+from courses c 
+where c.teacher_id in(
+    select id from teachers
+    where age <=20
+)
