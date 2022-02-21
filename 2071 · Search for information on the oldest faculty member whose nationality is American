@@ -1,0 +1,7 @@
+select *
+from teachers
+where (age,country) in (
+    select max(age),country
+    from teachers
+    where country ='USA'
+)
