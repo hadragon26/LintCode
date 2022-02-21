@@ -1,0 +1,10 @@
+select t.name,t.age,t.country 
+from teachers t,
+(
+
+
+select max(c.age) age ,c.country
+from teachers c
+group by c.country) g
+where g.country = t.country
+and t.age = g.age
