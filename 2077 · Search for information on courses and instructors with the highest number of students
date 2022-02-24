@@ -1,0 +1,3 @@
+select c.name as course_name ,c.student_count,t.name teacher_name from 
+courses c, teachers t where c.teacher_id = t.id
+and c.student_count = (select max(student_count) from courses)
