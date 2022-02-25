@@ -1,0 +1,9 @@
+select t.name teacher_name , coalesce(e.student_count,0) student_count
+from teachers t left join
+
+(select sum(c.student_count) student_count,c.teacher_id id
+from courses c
+group by teacher_id) e 
+
+
+on t.id= e.id
