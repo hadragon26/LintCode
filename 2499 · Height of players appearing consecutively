@@ -1,0 +1,4 @@
+select p.height 
+from players p,players p2,players p3
+where p2.id = p .id +1 and p3.id = p2.id + 1 
+and p.height = p2.height and p2.height = p3.height
