@@ -1,0 +1,23 @@
+CREATE FUNCTION get_nth_height(N INT) RETURNS INT
+BEGIN
+    RETURN (
+
+         
+        
+        select distinct height as nth_height
+        from
+        (select height,dense_rank() over(order by height desc ) as num from players ) p
+        where num=N
+
+  
+        
+
+
+
+
+
+
+     
+        
+    );
+END 
