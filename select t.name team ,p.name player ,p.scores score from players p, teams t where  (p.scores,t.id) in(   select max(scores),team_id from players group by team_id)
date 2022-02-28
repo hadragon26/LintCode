@@ -1,0 +1,9 @@
+select t.name team ,p.name player ,p.scores score
+from players p, teams t
+where 
+(p.scores,t.id) in(
+
+
+select max(scores),team_id
+from players
+group by team_id)
